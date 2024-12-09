@@ -1,0 +1,16 @@
+.card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image {
+  transition: transform 0.3s ease;
+  width: 100%;
+  display: block;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+}

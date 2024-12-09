@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #3f51b5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 40px 12px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+.iconWrapper {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.iconWrapper:focus {
+  outline: none;
+}
+
+.icon {
+  fill: #aaa;
+  width: 20px;
+  height: 20px;
+}
+
+.error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .form {
+    max-width: 90%;
+  }
+
+  .inputWrapper {
+    max-width: 100%;
+  }
+
+  .input {
+    font-size: 14px;
+    padding: 10px 35px 10px 35px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    max-width: 95%;
+  }
+
+  .inputWrapper {
+    max-width: 100%;
+  }
+
+  .input {
+    font-size: 12px;
+    padding: 8px 30px 8px 30px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+}
